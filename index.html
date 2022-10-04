@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Recipes App Demo</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+</head>
+
+<body>
+    <div class="app_heading">
+        <h1>Application Demo</h1>
+    </div>
+    <div id="app">
+        <div class="content">
+            <div class="iphone">
+                <div class="app_screen">
+                    <div class="white"></div>
+                </div>
+            </div>
+            <div class="app_content">
+                <div class="flex">
+                    <div class="search"><img src="img/left-arrow.png"></div>
+                    <div class="title">
+                        Recipes
+                    </div>
+                    <div class="search"><img src="img/search.png"></div>
+                </div>
+                <div class="menus">
+                    <div class="navigation">
+                        <div><span class="active">All</span></div>
+                        <div>Salads</div>
+                        <div>Soups</div>
+                        <div>Fish</div>
+                        <div>Meat</div>
+                        <div>Sn</div>
+                    </div>
+                </div>
+                <div class="white">
+                    <div class="gallery js-flickity"
+                        data-flickity-options='{ "wrapAround": true, "imagesLoaded": true }'>
+                        <div class="gallery-cell">
+                            <img src="img/food-image-01.png">
+                        </div>
+                        <div class="gallery-cell">
+                            <img src="img/food-image-02.png">
+                        </div>
+                        <div class="gallery-cell">
+                            <img src="img/food-image-01.png">
+                        </div>
+                    </div>
+                    <div class="food_details" id="one">
+                        <div class="title">Keto Mushroom Omelet</div>
+                        <div class="flex summary">
+                            <div class="like"><img src="img/heart.svg"></div>
+                            <div class="unit">
+                                <div>14g</div>
+                                <div class="pink">Easy</div>
+                            </div>
+                            <div class="dots">
+                                <img src="img/dots.svg">
+                            </div>
+                        </div>
+                        <div class="content">
+                            This hearty omelet is super healthy, and just takes a few minutes to make! Fresh mushrooms
+                            make a delicious filling.
+                        </div>
+                        <div class="flex">
+                            <div class="boxes">
+                                <img src="img/time.svg">
+                                <div><span>5+10</span>Min</div>
+                            </div>
+                            <div class="boxes">
+                                <img src="img/type.svg">
+                                <div><span>Breakfast</span></div>
+                            </div>
+                            <div class="boxes">
+                                <img src="img/kals.svg">
+                                <div><span>517</span>Kcal</div>
+                            </div>
+                        </div>
+                        <div class="nutrition">
+                            <div class="title">Nutrition Information</div>
+                            <div class="sub-title">Per serving</div>
+                            <div class="flex">
+                                <div class="loader">
+                                    <div class="loading eighty_five"></div>
+                                </div>
+                                <div class="detail">Carbs</div>
+                                <div class="percent">85%</div>
+                            </div>
+                            <div class="flex">
+                                <div class="loader">
+                                    <div class="loading fifty_six"></div>
+                                </div>
+                                <div class="detail">Protein</div>
+                                <div class="percent">56%</div>
+                            </div>
+                        </div>
+                        <div class="btn">View more</div>
+                    </div>
+
+                    <div class="food_details" id="two">
+                        <div class="title">Keto Mushroom Salad</div>
+                        <div class="flex summary">
+                            <div class="like"><img src="img/heart.svg"></div>
+                            <div class="unit">
+                                <div>200g</div>
+                                <div class="pink">Easy</div>
+                            </div>
+                            <div class="dots">
+                                <img src="img/dots.svg">
+                            </div>
+                        </div>
+                        <div class="content">
+                            This hearty omelet is super healthy, and just takes a few minutes to make! Fresh mushrooms
+                            make a delicious filling.
+                        </div>
+                        <div class="flex">
+                            <div class="boxes">
+                                <img src="img/time.svg">
+                                <div><span>10+15</span>Min</div>
+                            </div>
+                            <div class="boxes">
+                                <img src="img/type.svg">
+                                <div><span>Breakfast</span></div>
+                            </div>
+                            <div class="boxes">
+                                <img src="img/kals.svg">
+                                <div><span>550</span>Kcal</div>
+                            </div>
+                        </div>
+                        <div class="nutrition">
+                            <div class="title">Nutrition Information</div>
+                            <div class="sub-title">Per serving</div>
+                            <div class="flex">
+                                <div class="loader">
+                                    <div class="loading ninty"></div>
+                                </div>
+                                <div class="detail">Carbs</div>
+                                <div class="percent">90%</div>
+                            </div>
+                            <div class="flex">
+                                <div class="loader">
+                                    <div class="loading seventy_five"></div>
+                                </div>
+                                <div class="detail">Protein</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="btn">View more</div>
+                    </div>
+
+                    <div class="food_details" id="three">
+                        <div class="title">Keto Mushroom Fish</div>
+                        <div class="flex summary">
+                            <div class="like"><img src="img/heart.svg"></div>
+                            <div class="unit">
+                                <div>50g</div>
+                                <div class="pink">Easy</div>
+                            </div>
+                            <div class="dots">
+                                <img src="img/dots.svg">
+                            </div>
+                        </div>
+                        <div class="content">
+                            This hearty omelet is super healthy, and just takes a few minutes to make! Fresh mushrooms
+                            make a delicious filling.
+                        </div>
+                        <div class="flex">
+                            <div class="boxes">
+                                <img src="img/time.svg">
+                                <div><span>10+15</span>Min</div>
+                            </div>
+                            <div class="boxes">
+                                <img src="img/type.svg">
+                                <div><span>Breakfast</span></div>
+                            </div>
+                            <div class="boxes">
+                                <img src="img/kals.svg">
+                                <div><span>206</span>Kcal</div>
+                            </div>
+                        </div>
+                        <div class="nutrition">
+                            <div class="title">Nutrition Information</div>
+                            <div class="sub-title">Per serving</div>
+                            <div class="flex">
+                                <div class="loader">
+                                    <div class="loading sixty_six"></div>
+                                </div>
+                                <div class="detail">Carbs</div>
+                                <div class="percent">66%</div>
+                            </div>
+                            <div class="flex">
+                                <div class="loader">
+                                    <div class="loading eighty"></div>
+                                </div>
+                                <div class="detail">Protein</div>
+                                <div class="percent">80%</div>
+                            </div>
+                        </div>
+                        <div class="btn">View more</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="user-guide">
+            <div class="down-scroll">
+                <div class="line"></div>
+                <i class="arrow down"></i>
+                <div class="scroll_down">Scroll the <br>page</div>
+            </div>
+            <div class="swipe">
+                <i class="arrow left"></i>
+                <div class="line"></div>
+                <i class="arrow right"></i>
+                <div class="scroll_down">Swipe the <br>Recipes</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

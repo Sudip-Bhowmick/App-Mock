@@ -1,0 +1,576 @@
+@font-face {
+  font-family: Campton;
+  src: url(Font/Campton-LightDEMO.woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Campton;
+  src: url(Font/Campton-BoldDEMO.woff);
+  font-weight: bold;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Campton;
+  overflow-y: hidden;
+}
+
+#app {
+  height: 500px;
+  width: 260px;
+  margin: auto;
+  position: relative;
+}
+
+#app .content {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  width: auto;
+  height: inherit;
+}
+
+#app .content .iphone {
+  background-image: url(img/Iphone_x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: inherit;
+}
+
+#app .content .iphone .app_screen {
+  background-color: #A4BB3A;
+  width: 84%;
+  overflow: hidden;
+  margin: 0 auto;
+  z-index: -1;
+  position: relative;
+  height: 92.6%;
+  top: 3.5%;
+}
+
+#app .content .iphone .app_screen .white {
+  height: 47%;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  background: #fff;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+#app .content .app_content {
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 10%;
+  width: 81.9%;
+  margin-left: 8.1% !important;
+  margin: auto;
+}
+
+#app .content .app_content .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+#app .content .app_content .flex .title {
+  width: 50%;
+}
+
+#app .content .app_content .flex .search {
+  width: 25%;
+}
+
+#app .content .app_content .flex .search img {
+  width: 12px;
+  cursor: pointer;
+}
+
+#app .content .app_content .food_details .summary {
+  padding: 10px 0;
+}
+
+#app .content .app_content .food_details .title {
+  color: #3B3B3B;
+  font-weight: bold;
+}
+
+#app .content .app_content .title {
+  color: #fff;
+  font-size: 14px;
+}
+
+#app .content .app_content .menus {
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+#app .content .app_content .menus::-webkit-scrollbar {
+  display: none;
+}
+
+#app .content .app_content .menus .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 150%;
+  color: #fff;
+  font-size: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #92909061;
+}
+
+#app .content .app_content .menus .navigation div {
+  width: 100%;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+
+#app .content .app_content .menus .navigation div .active {
+  padding-bottom: 7px;
+  border-bottom: 2px solid;
+}
+
+.app_heading {
+  text-align: center;
+}
+
+.flickity-prev-next-button, .flickity-page-dots {
+  display: none;
+}
+
+.gallery-cell img {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.gallery-cell.is-selected img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.food_details {
+  display: none;
+  overflow: auto;
+  height: 244px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  scrollbar-width: none;
+}
+
+.food_details.is-selected {
+  display: block;
+}
+
+.food_details::-webkit-scrollbar {
+  display: none;
+}
+
+.food_details .content {
+  font-size: 10px;
+  padding: 12px 4px;
+  height: auto !important;
+}
+
+.food_details .btn {
+  background: #76256E;
+  width: 77%;
+  margin: 18px auto;
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #76256E;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.food_details .btn:hover {
+  background: transparent;
+  color: #76256E;
+}
+
+.food_details .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.food_details .flex .boxes {
+  font-family: sans-serif;
+  -webkit-box-shadow: 0px -7px 86px #0000000a;
+          box-shadow: 0px -7px 86px #0000000a;
+  background: #fff;
+  padding: 10px 6px;
+  border-radius: 12px;
+  margin: 6px 4px;
+  color: #9A9A9A;
+}
+
+.food_details .flex .boxes div {
+  padding-top: 6px;
+}
+
+.food_details .flex .boxes span {
+  color: #000;
+  padding-right: 5px;
+}
+
+.food_details .flex .boxes img {
+  height: 20px;
+}
+
+.food_details .flex .like {
+  cursor: pointer;
+  padding-top: 2px;
+}
+
+.food_details .flex .like.clicked {
+  -webkit-animation: 0.5s like ease forwards;
+          animation: 0.5s like ease forwards;
+}
+
+.food_details .flex .dots {
+  padding-top: 2px;
+}
+
+.food_details .flex img {
+  width: 25px;
+}
+
+.food_details .flex .unit {
+  border: 1px solid #E6E6E6;
+  padding: 0px 8px;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 8px;
+}
+
+.food_details .flex .unit .pink {
+  color: #FF5548;
+}
+
+.food_details .flex .unit div {
+  padding: 5px 12px;
+}
+
+.food_details .flex .unit div:first-child {
+  border-right: 1px solid #E6E6E6;
+}
+
+.food_details .nutrition {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+}
+
+.food_details .nutrition .flex {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.food_details .nutrition .detail {
+  margin-left: 12px;
+  font-size: 10px;
+  font-weight: bold;
+  width: 65px;
+}
+
+.food_details .nutrition .percent {
+  margin-left: 6px;
+  font-size: 10px;
+  color: #24B445;
+  font-weight: bold;
+}
+
+.food_details .nutrition .loader {
+  background: #ECECEC;
+  height: 5px;
+  width: 100%;
+  border-radius: 40px;
+  margin: 6px 0;
+}
+
+.food_details .nutrition .loader .loading {
+  background: #37CEC9;
+  height: 5px;
+  border-radius: 40px;
+  width: 0;
+}
+
+.food_details .nutrition .loader .loading.eighty_five.start {
+  -webkit-animation: 1.5s eighty_five ease forwards;
+          animation: 1.5s eighty_five ease forwards;
+}
+
+.food_details .nutrition .loader .loading.fifty_six.start {
+  -webkit-animation: 1.5s fifty_six ease forwards;
+          animation: 1.5s fifty_six ease forwards;
+}
+
+.food_details .nutrition .loader .loading.ninty.start {
+  -webkit-animation: 1.5s ninty ease forwards;
+          animation: 1.5s ninty ease forwards;
+}
+
+.food_details .nutrition .loader .loading.seventy_five.start {
+  -webkit-animation: 1.5s seventy_five ease forwards;
+          animation: 1.5s seventy_five ease forwards;
+}
+
+.food_details .nutrition .loader .loading.sixty_six.start {
+  -webkit-animation: 1.5s sixty_six ease forwards;
+          animation: 1.5s sixty_six ease forwards;
+}
+
+.food_details .nutrition .loader .loading.eighty.start {
+  -webkit-animation: 1.5s eighty ease forwards;
+          animation: 1.5s eighty ease forwards;
+}
+
+.food_details .nutrition .title {
+  font-size: 12px !important;
+  font-weight: bold;
+  padding-bottom: 0 !important;
+}
+
+.food_details .nutrition .sub-title {
+  font-size: 10px;
+  color: #1E1E1E;
+  padding-bottom: 10px;
+}
+
+.nutrition .flex {
+  padding-bottom: 4px !important;
+}
+
+@-webkit-keyframes eighty_five {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes eighty_five {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+@-webkit-keyframes fifty_six {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 56%;
+  }
+}
+
+@keyframes fifty_six {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 56%;
+  }
+}
+
+@-webkit-keyframes ninty {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes ninty {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes seventy_five {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+@keyframes seventy_five {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+@-webkit-keyframes sixty_six {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 66%;
+  }
+}
+
+@keyframes sixty_six {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 66%;
+  }
+}
+
+@-webkit-keyframes eighty {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes eighty {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes like {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes like {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 7px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  top: 160px;
+  right: -110px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  position: absolute;
+  top: 160px;
+  right: -25px;
+}
+
+.user-guide .swipe .line {
+  height: 2px;
+  width: 84px;
+  top: 167px;
+  right: -102px;
+}
+
+.user-guide .swipe .scroll_down {
+  top: 133px;
+  right: -87px;
+}
+
+.user-guide .scroll_down {
+  bottom: 135px;
+  position: absolute;
+  right: -80px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.user-guide .line {
+  height: 100px;
+  position: absolute;
+  background: #000;
+  width: 2px;
+  right: -18px;
+  bottom: 98px;
+}
+
+.user-guide .arrow.down {
+  bottom: 90px;
+  position: absolute;
+  right: -25px;
+}
+/*# sourceMappingURL=app.css.map */
